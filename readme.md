@@ -1,6 +1,3 @@
-# 演示地址
-<a href="https://xdhan.github.io/vue-dropbox" target="_blank"></a>
-
 # 安装
 ```
 yarn add vue-dropbox
