@@ -1,3 +1,6 @@
+# 演示地址
+https://xdhan.github.io/vue-dropbox
+
 # 安装
 ```
 yarn add vue-dropbox
