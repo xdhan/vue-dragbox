@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "node example/server.js",
-    "example": "webpack --config example/webpack.prod.js",
+    "example": "webpack --config example/webpack.gh-pages.js",
     "build": "rollup --config rollup.config.js"
   },
   "devDependencies": {
