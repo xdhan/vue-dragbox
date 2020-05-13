@@ -1,5 +1,5 @@
 # 演示地址
-https://xdhan.github.io/vue-dropbox
+<a href="https://xdhan.github.io/vue-dropbox" target="_blank"></a>
 
 # 安装
 ```
