@@ -14,7 +14,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      dropbox: path.resolve(__dirname, '../src/index.js')
+      dragbox: path.resolve(__dirname, '../src/index.js')
     }
   },
   module: {

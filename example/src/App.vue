@@ -3,7 +3,7 @@
     <div class="top">
       <div class="item">
         <transition name="top-left">
-          <dropbox
+          <dragbox
             :class="collapsed ? 'is-collapsed' : '' "
             drag-class="drag"
             drag-content-class="drag-content"
@@ -26,12 +26,12 @@
             <template #content>
               content
             </template>
-          </dropbox>
+          </dragbox>
         </transition>
       </div>
 
       <div class="item">
-        <dropbox
+        <dragbox
           drag-class="drag"
           drag-content-class="drag-content"
           drag-header-class="drag-header"
@@ -54,7 +54,7 @@
           <template #content>
             content
           </template>
-        </dropbox>
+        </dragbox>
 
         <div class="toolbar">
           <span class="open-close" @click="dragTopRightVisible = !dragTopRightVisible">
@@ -65,7 +65,7 @@
     </div>
 
     <div class="bottom">
-      <dropbox
+      <dragbox
         drag-class="drag"
         drag-content-class="drag-content1"
         drag-header-class="drag-header1"
@@ -80,9 +80,9 @@
         <template #content>
           content
         </template>
-      </dropbox>
+      </dragbox>
 
-      <dropbox
+      <dragbox
         drag-class="drag"
         drag-content-class="drag-content2"
         drag-header-class="drag-header2"
@@ -97,9 +97,9 @@
         <template #content>
           content
         </template>
-      </dropbox>
+      </dragbox>
 
-      <dropbox
+      <dragbox
         drag-class="drag"
         drag-content-class="drag-content3"
         drag-header-class="drag-header3"
@@ -114,15 +114,15 @@
         <template #content>
           content
         </template>
-      </dropbox>
+      </dragbox>
     </div>
   </div>
 </template>
 
 <script>
-import dropbox from 'dropbox'
+import dragbox from 'dragbox'
 export default {
-  components: { dropbox },
+  components: { dragbox },
   data () {
     return {
       dragTopLeftVisible: true,
@@ -134,8 +134,8 @@ export default {
     }
   },
   mounted () {
-    let arr = [1, 2, 299, 8, 31231, 4, 2, 353]
-    let res = arr.reduce((acc, cur) => {
+    const arr = [1, 2, 299, 8, 31231, 4, 2, 353]
+    const res = arr.reduce((acc, cur) => {
       if (cur < 300) return acc > cur ? acc : cur
       return acc
     })

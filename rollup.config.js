@@ -8,12 +8,12 @@ import { eslint } from 'rollup-plugin-eslint'
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/dropbox.js',
+    file: 'dist/dragbox.js',
     format: 'umd',
-    name: 'dropbox'
+    name: 'dragbox'
   },
   plugins: [
-    resolve(),  // 这样 Rollup 能找到 `ms`
+    resolve(), // 这样 Rollup 能找到 `ms`
     commonjs(), // 这样 Rollup 能转换 `ms` 为一个ES模块
     eslint(),
     babel(),

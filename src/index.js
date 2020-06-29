@@ -1,5 +1,5 @@
-import Dropbox from './Drop.vue'
+import Dragbox from './Drag.vue'
 
-Dropbox.install = Vue => Vue.component(Dropbox.name, Dropbox)
+Dragbox.install = Vue => Vue.component(Dragbox.name, Dragbox)
 
-export default Dropbox
+export default Dragbox

@@ -1,8 +1,8 @@
 # 安装
 ```
-yarn add vue-dropbox
+yarn add vue-dragbox
 # 或者
-npm install vue-dropbox
+npm install vue-dragbox
 ```
 
 # 使用

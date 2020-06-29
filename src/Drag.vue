@@ -22,10 +22,10 @@
 
 <script>
 export default {
-  name: 'Dropbox',
+  name: 'Dragbox',
   directives: {
     drag: {
-      bind (el, binding, vnode){
+      bind (el, binding, vnode) {
         el.setAttribute('uid', vnode.context._uid)
       },
       inserted (el, binding, vnode) {
@@ -44,7 +44,7 @@ export default {
           return maxZindex
         }
         el.style.zIndex = getMaxZIndex() + 1
-        
+
         // const setZIndex = () => {
         //   const allEl = document.body.querySelectorAll('.h-drag')
         //   Array.from(allEl).forEach(item => {
@@ -64,7 +64,7 @@ export default {
 
         const header = el.querySelector('.h-drag .header')
         const noDragEls = vnode.context.dragdisable.map(name => {
-          let noDragEl = el.querySelector(`.h-drag .header .${name}`)
+          const noDragEl = el.querySelector(`.h-drag .header .${name}`)
           noDragEl.style.cursor = 'default'
           return noDragEl
         })
@@ -74,11 +74,10 @@ export default {
 
         el.addEventListener('mousedown', () => {
           console.log(el.getBoundingClientRect().width)
-          let maxZindex = getMaxZIndex()
-          let elZIndex = getComputedStyle(el).zIndex
-          if (maxZindex > elZIndex)
-            el.style.zIndex = maxZindex + 1
-        },false)
+          const maxZindex = getMaxZIndex()
+          const elZIndex = getComputedStyle(el).zIndex
+          if (maxZindex > elZIndex) { el.style.zIndex = maxZindex + 1 }
+        }, false)
 
         header.addEventListener('mousedown', e => {
           // 点击 禁止拖动的元素及其内部元素 返回
@@ -131,7 +130,6 @@ export default {
             el.style.top = cy + 'px'
           }
         })
-
       }
     }
   },

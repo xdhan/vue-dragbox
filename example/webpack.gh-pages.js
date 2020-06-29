@@ -9,11 +9,11 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'dist'),
-    publicPath: '/vue-dropbox'
+    publicPath: '/vue-dragbox'
   },
   resolve: {
     alias: {
-      dropbox: path.resolve(__dirname, '../src/index.js')
+      dragbox: path.resolve(__dirname, '../src/index.js')
     }
   },
   module: {

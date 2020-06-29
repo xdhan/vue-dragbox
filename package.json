@@ -1,9 +1,9 @@
 {
-  "name": "vue-dropbox",
+  "name": "vue-dragbox",
   "version": "1.0.4",
   "description": "vue 窗口拖曳组件",
-  "main": "dist/dropbox.js",
-  "repository": "https://github.com/xdhan/vue-dropbox",
+  "main": "dist/dragbox.js",
+  "repository": "https://github.com/xdhan/vue-dragbox",
   "author": "xdhan",
   "license": "MIT",
   "scripts": {
