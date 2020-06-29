@@ -1,10 +1,13 @@
 {
-  "name": "vue-dragbox",
-  "version": "1.0.4",
+  "name": "@tungh/vue-dragbox",
+  "version": "1.0.0",
   "description": "vue 窗口拖曳组件",
   "main": "dist/dragbox.js",
   "repository": "https://github.com/xdhan/vue-dragbox",
-  "author": "xdhan",
+  "person": {
+    "name": "xdhan",
+    "email": "tunghan@qq.com"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "node example/server.js",

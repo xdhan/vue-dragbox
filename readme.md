@@ -1,8 +1,8 @@
 # 安装
 ```
-yarn add vue-dragbox
+yarn add @tungh/vue-dragbox
 # 或者
-npm install vue-dragbox
+npm install @tungh/vue-dragbox
 ```
 
 # 使用
